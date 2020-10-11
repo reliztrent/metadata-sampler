@@ -45,8 +45,9 @@
             <div class="col-md-12 p-4 mb-4">
                 <h1>Item Metadata in loc.gov Search Result Records</h1>
                 <div class="small">
-                    <p>The table below displays the <code>216</code> metadata fields found from a sample of query result items across the <code>428</code> <a href="https://loc.gov/collections">collections in loc.gov</a>. These fields are returned in JSON query records using the loc.gov API. Additional item metadata fields may be found directly in item-level and resource-level records. For each metadata field below, one sample record was pulled from each collection on loc.gov. In <code>21</code> collections, a sample could not be found (usually because the collections contained less than 10 records). Thus, a total of <code>407</code> samples were pulled for each metadata field. Nested fields appear as in <code>resources > 0 > url</code>, where <code>resources</code> is the top-level field within the result object, <code>0</code> is the first item within the list contained in <code>resources</code>, and <code>url</code> is a field within that list item. In the case of fields nested within lists (such as this example), samples have been pulled from the first list item but not from subsequent list items (as a result, you will not see <code>resources > 1 > url</code> in this table). Code at <a href="https://github.com/reliztrent/metadata-sampler">https://github.com/reliztrent/metadata-sampler</a></p>
-                    <p>For more documentation about the loc.gov API and records, see Library of Congress's <a href="https://libraryofcongress.github.io/data-exploration/">About the loc.gov API</a>. .</p>
+                    <p>The table below displays the <code>216</code> metadata fields found from a sample of query result items across the <code>428</code> <a href="https://loc.gov/collections">collections in loc.gov</a>. These fields are returned in JSON query records using the loc.gov API. Additional item metadata fields may be found directly in item-level and resource-level records. For each metadata field below, one sample record was pulled from each collection on loc.gov.</p> 
+                    <p>Code at <a href="https://github.com/reliztrent/metadata-sampler">https://github.com/reliztrent/metadata-sampler</a>. For more documentation about the loc.gov API and records, see Library of Congress's <a href="https://libraryofcongress.github.io/data-exploration/">About the loc.gov API</a>. .</p>
+                    <p>For additional details, see <a href="#notes">notes</a></p>
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
                             </tr>
                             <tr>
                                 <th>field name</th>
-                                <th># of collection samples using this field (of 407)</th>
+                                <th># of collection samples using this field (of 428)</th>
                                 <th>% of collection samples using this field</th>
                                 <th>data types found in samples</th>
                                 <th>is this field a list (multi-value)?</th>
@@ -109,7 +110,6 @@
                                 <th>Anna Maria Brodeau Thornton Papers</th>
                                 <th>Ansel Adamss Photographs of Japanese-American Internment at Manzanar</th>
                                 <th>Architecture, Design & Engineering Drawings</th>
-                                <th>Archive of Hispanic Literature on Tape</th>
                                 <th>Archive of Recorded Poetry and Literature</th>
                                 <th>Armenian Rarities Collection</th>
                                 <th>Associated Press News Dispatches, 1915-1930</th>
@@ -206,6 +206,7 @@
                                 <th>Eltaher Collection</th>
                                 <th>Emile Berliner and the Birth of the Recording Industry</th>
                                 <th>Ernest Bloch Collection</th>
+                                <th>Ethnic Heritage and Language Schools in America Project</th>
                                 <th>Eugene Meyer Papers</th>
                                 <th>Event Videos</th>
                                 <th>Executive Branch Federal Government Web Archive</th>
@@ -430,6 +431,7 @@
                                 <th>The Life of a City: Early Films of New York, 1898-1906</th>
                                 <th>The March King: John Philip Sousa</th>
                                 <th>The Moldenhauer Archives - The Rosaleen Moldenhauer Memorial</th>
+                                <th>The PALABRA Archive</th>
                                 <th>The Roger Reynolds Collection</th>
                                 <th>The Spalding Base Ball Guides, 1889-1939</th>
                                 <th>The Spanish-American War in Motion Pictures</th>
@@ -453,7 +455,6 @@
                                 <th>United States Supreme Court Nominations Web Archive</th>
                                 <th>Van Vechten Collection</th>
                                 <th>Variety Stage Sound Recordings and Motion Pictures</th>
-                                <th>Veterans History Project</th>
                                 <th>Veterans History Project Web Archive</th>
                                 <th>Vietnam-Era Prisoner-of-War/Missing-in-Action Database</th>
                                 <th>Vietnamese Elections Web Archive</th>
@@ -499,7 +500,7 @@
                         <tfoot>
                             <tr>
                                 <th>field name</th>
-                                <th># of collection samples using this field (of 407)</th>
+                                <th># of collection samples using this field (of 428)</th>
                                 <th>% of collection samples using this field</th>
                                 <th>data types found in samples</th>
                                 <th>is this field a list (multi-value)?</th>
@@ -547,7 +548,6 @@
                                 <th>Anna Maria Brodeau Thornton Papers</th>
                                 <th>Ansel Adamss Photographs of Japanese-American Internment at Manzanar</th>
                                 <th>Architecture, Design & Engineering Drawings</th>
-                                <th>Archive of Hispanic Literature on Tape</th>
                                 <th>Archive of Recorded Poetry and Literature</th>
                                 <th>Armenian Rarities Collection</th>
                                 <th>Associated Press News Dispatches, 1915-1930</th>
@@ -644,6 +644,7 @@
                                 <th>Eltaher Collection</th>
                                 <th>Emile Berliner and the Birth of the Recording Industry</th>
                                 <th>Ernest Bloch Collection</th>
+                                <th>Ethnic Heritage and Language Schools in America Project</th>
                                 <th>Eugene Meyer Papers</th>
                                 <th>Event Videos</th>
                                 <th>Executive Branch Federal Government Web Archive</th>
@@ -868,6 +869,7 @@
                                 <th>The Life of a City: Early Films of New York, 1898-1906</th>
                                 <th>The March King: John Philip Sousa</th>
                                 <th>The Moldenhauer Archives - The Rosaleen Moldenhauer Memorial</th>
+                                <th>The PALABRA Archive</th>
                                 <th>The Roger Reynolds Collection</th>
                                 <th>The Spalding Base Ball Guides, 1889-1939</th>
                                 <th>The Spanish-American War in Motion Pictures</th>
@@ -891,7 +893,6 @@
                                 <th>United States Supreme Court Nominations Web Archive</th>
                                 <th>Van Vechten Collection</th>
                                 <th>Variety Stage Sound Recordings and Motion Pictures</th>
-                                <th>Veterans History Project</th>
                                 <th>Veterans History Project Web Archive</th>
                                 <th>Vietnam-Era Prisoner-of-War/Missing-in-Action Database</th>
                                 <th>Vietnamese Elections Web Archive</th>
@@ -936,6 +937,18 @@
                         </tfoot>
                     </table>
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 p-4 mb-4">
+                <h2 id="notes">Notes</h2>
+                <ol>
+                    <li>Nested fields appear as in <code>resources &gt; 0 &gt; url</code>, where <code>resources</code> is the top-level JSON list within the result object, <code>0</code> is its first list item, and <code>url</code> is a dictionary key within the list items.</li>
+                    <li>In the case of lists nested within the hierarchy of a field (such as the example above, where <code>resources</code> is a list above <code>url</code>), samples have been pulled from the first list item but not from subsequent list items (as a result, you will not see <code>resources &gt; 1 &gt; url</code> in this table).</li> 
+                    <li>When the target field (the lowest level field) is a list, the sample value is pulled randomly from all items in the list.</li>
+                    <li>Where a field is listed in the table twice, one instance is a list and the other is not. This means that in some collections, the field should be parsed as a list but not in others.</li>
+                    <li>Where a field is listed as appearing in 0% of collections, this means that in all samples where the field appears, it is null (empty).</li>
+                </ol>
             </div>
         </div>
     </div><!--close boostrap container-->
